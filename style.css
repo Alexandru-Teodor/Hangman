@@ -1,0 +1,201 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+#float-right {
+    position:relative;
+    left: 10%;
+    top:12%;
+}
+#main-box {
+    display:table;
+    margin-top: 1rem;
+    position: relative;
+    margin-left:40%;
+}
+@media (max-width: 300px) {
+    #main-box{
+        margin-left: 10% !important;
+    }
+    #guess-box{
+        margin-left: 10% !important ;
+    }
+    #keyboard {
+        margin-left: 5% !important ;
+    }
+}
+#guess-box {
+    display:table;
+    position: relative;
+    margin-left:40%;
+}
+#keyboard {
+    display:table;
+    position: relative;
+    margin-left:10%;
+}
+#base {
+    width: 7rem;
+    height: 1rem;
+    background-color: rgb(139,69,19);
+}
+#pillar {
+    width: 0.6rem;
+    height: 15rem;
+    margin-left:15%;
+    background-color: rgb(139,69,19);
+}
+#beam {
+    width: 10rem;
+    height: 0.6rem;
+    background-color: rgb(139,69,19);
+}
+#rope {
+    width: 0.2rem;
+    height: 2.5rem;
+    background-color: silver;
+    position: absolute;
+    left:80%;
+}
+#prop {
+    width: 0.4rem;
+    height: 2.5rem;
+    background-color: rgb(139,69,19);
+    position: absolute;
+    left:22%;
+    transform: 
+            translateY(-0.5rem)
+            translateX(5px)
+            rotate(40deg); 
+}
+#head {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    left:71%;
+    top: 18.5%;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+
+}
+#body {
+    position: absolute;
+    width: 2.5rem;
+    height: 4rem;
+    border-radius: 50%;
+    left:69%;
+    top: 30.7%;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: silver;
+}
+#right-hand {
+    width: 0.4rem;
+    height: 2.5rem;
+    border-width: 1px;
+    border-style:solid;
+    border-color: black;
+    background-color: silver;
+    position: absolute;
+    border-radius: 1rem;
+    left:59%;
+    top:34%;
+    transform:
+            translateX(5px)
+            rotate(35deg); 
+}
+#left-hand {
+    width: 0.4rem;
+    height: 2.5rem;
+    border-width: 1px;
+    border-style:solid;
+    border-color: black;
+    background-color: silver;
+    position: absolute;
+    border-radius: 1rem;
+    left:94%;
+    top:34%;
+    transform: 
+            translateX(5px)
+            rotate(-35deg); 
+}
+#right-leg {
+    width: 0.6rem;
+    height: 3.5rem;
+    border-width: 1px;
+    border-style:solid;
+    border-color: black;
+    background-color: silver;
+    position: absolute;
+    border-radius: 1rem;
+    left:71%;
+    top:52.8%;
+}
+#left-leg {
+    width: 0.6rem;
+    height: 3.5rem;
+    border-width: 1px;
+    border-style:solid;
+    border-color: black;
+    background-color: silver;
+    position: absolute;
+    border-radius: 1rem;
+    left:85%;
+    top:52.8%;
+}
+.btn {
+    background-color: #1877F2;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    margin: 0.3rem;
+    margin-top: 0.1rem;
+    padding: 0.6rem;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn:disabled {
+    background-color: hsla(214, 89%, 68%, 1);
+    cursor:auto;
+    border-style: inset;
+    border-width: 2px;
+}
+#resetBtn {
+    position: relative;
+    left:43%;
+    background-color: #009F6B;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    margin: 0.3rem;
+    padding: 0.4rem;
+}
+#resetBtn:hover {
+    cursor: pointer;
+}
+.hide {
+    visibility: hidden;
+}
+.lost {
+    margin-left: 40% !important;
+    margin-bottom: 2%;
+    font-family: monospace;
+    font-size: x-large;
+    color:red;
+}
+.won {
+    margin-left: 40% !important;
+    margin-bottom: 2%;
+    font-family: cursive;
+    font-size: x-large;
+    color: green;
+}
